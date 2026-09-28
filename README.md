@@ -40,7 +40,6 @@ Nakon što ste napravili fork, predavaču dostavite sljedeće podatke:
 
 ```text
 Ime i prezime:
-JMBAG:
 GitHub username:
 ```
 
@@ -48,7 +47,6 @@ Primjer:
 
 ```text
 Ivan Horvat
-0246098765
 ivanhorvat
 ```
 
