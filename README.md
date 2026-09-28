@@ -321,3 +321,18 @@ zadatak03
 ```
 
 Ovakvo imenovanje omogućuje jednostavan pregled i kasniju automatsku provjeru predanih vježbi.
+
+## Evidencija studenata
+
+Na početku kolegija svaki student treba jednom ispuniti obrazac za evidenciju:
+
+[AA-2026 – GitHub podaci studenata](https://forms.gle/feG2GaQ3cqPhYfUu7)
+
+U obrazac je potrebno upisati:
+
+- ime i prezime
+- GitHub username
+
+GitHub username koristi se za praćenje predanih vježbi i provjeru brancheva `vjezba01`, `vjezba02`, `vjezba03`, ...
+
+Obrazac je potrebno ispuniti samo jednom.
