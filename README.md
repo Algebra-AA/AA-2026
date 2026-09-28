@@ -36,21 +36,18 @@ Nakon toga ćete na svom GitHub računu imati vlastitu kopiju repozitorija:
 
 ## 2. Podaci za evidenciju
 
-Nakon što ste napravili fork, predavaču dostavite sljedeće podatke:
+Nakon što ste napravili fork, predavaču putem google obrasca dostavite sljedeće podatke:
 
-```text
-Ime i prezime:
-GitHub username:
-```
+[AA-2026 – GitHub podaci studenata](https://forms.gle/feG2GaQ3cqPhYfUu7)
 
-Primjer:
+U obrazac je potrebno upisati:
 
-```text
-Ivan Horvat
-ivanhorvat
-```
+- ime i prezime
+- GitHub username
 
-GitHub username dostavlja se samo jednom.
+GitHub username koristi se za praćenje predanih vježbi i provjeru brancheva `vjezba01`, `vjezba02`, `vjezba03`, ...
+
+Obrazac je potrebno ispuniti samo jednom.
 
 Na temelju GitHub usernamea predavač će moći pratiti postoje li u vašem repozitoriju branchevi za pojedine vježbe, primjerice:
 
@@ -321,18 +318,3 @@ zadatak03
 ```
 
 Ovakvo imenovanje omogućuje jednostavan pregled i kasniju automatsku provjeru predanih vježbi.
-
-## Evidencija studenata
-
-Na početku kolegija svaki student treba jednom ispuniti obrazac za evidenciju:
-
-[AA-2026 – GitHub podaci studenata](https://forms.gle/feG2GaQ3cqPhYfUu7)
-
-U obrazac je potrebno upisati:
-
-- ime i prezime
-- GitHub username
-
-GitHub username koristi se za praćenje predanih vježbi i provjeru brancheva `vjezba01`, `vjezba02`, `vjezba03`, ...
-
-Obrazac je potrebno ispuniti samo jednom.
