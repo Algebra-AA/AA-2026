@@ -45,8 +45,6 @@ U obrazac je potrebno upisati:
 - ime i prezime
 - GitHub username
 
-GitHub username koristi se za praćenje predanih vježbi i provjeru brancheva `vjezba01`, `vjezba02`, `vjezba03`, ...
-
 Obrazac je potrebno ispuniti samo jednom.
 
 Na temelju GitHub usernamea predavač će moći pratiti postoje li u vašem repozitoriju branchevi za pojedine vježbe, primjerice:
