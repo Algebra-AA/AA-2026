@@ -8,9 +8,11 @@ Svaki student treba:
 
 1. Forkati ovaj repozitorij na svoj GitHub račun.
 2. Klonirati svoj fork na računalo.
-3. Za svaku vježbu napraviti zaseban branch.
-4. Nakon završetka vježbe napraviti commit.
-5. Pushati branch na svoj GitHub repozitorij.
+3. Otvoriti repozitorij u Visual Studio Codeu.
+4. Za svaku vježbu napraviti zaseban branch.
+5. Unutar svake vježbe napraviti zasebnu mapu za svaki zadatak.
+6. Nakon završetka rada napraviti commit.
+7. Pushati branch na svoj GitHub repozitorij.
 
 ---
 
@@ -32,13 +34,13 @@ Klonirajte svoj fork:
 git clone https://github.com/VAS-USERNAME/AA-2026.git
 ```
 
-Zatim otvorite mapu:
+Zatim otvorite mapu projekta:
 
 ```bash
 cd AA-2026
 ```
 
-Ako koristite Visual Studio Code:
+Otvorite projekt u Visual Studio Codeu:
 
 ```bash
 code .
@@ -63,14 +65,14 @@ vjezba04
 Primjer za prvu vježbu:
 
 ```bash
-git switch -c vjezba01
+git checkout -b vjezba01
 ```
 
 Za svaku sljedeću vježbu prvo se vratite na `main`, a zatim napravite novi branch:
 
 ```bash
-git switch main
-git switch -c vjezba02
+git checkout main
+git checkout -b vjezba02
 ```
 
 Svaki novi branch mora biti napravljen iz `main` brancha.
@@ -79,35 +81,57 @@ Nemojte izrađivati `vjezba02` iz `vjezba01`, `vjezba03` iz `vjezba02` itd.
 
 ---
 
-## 4. Struktura datoteka
+## 4. Struktura zadataka unutar vježbe
 
-Unutar svakog brancha nalaze se samo datoteke koje pripadaju toj vježbi.
+Jedna vježba može sadržavati više zadataka.
 
-Primjer za `vjezba01`:
+Svaki zadatak mora biti smješten u zasebnu mapu.
 
-```text
-index.html
-style.css
-script.js
-```
-
-Sljedeća vježba može ponovno imati datoteke istih naziva jer se nalazi u drugom branchu.
-
-Primjer za `vjezba02`:
+Primjer za branch `vjezba01`:
 
 ```text
-index.html
-style.css
-script.js
+zadatak01/
+    index.html
+    style.css
+    script.js
+
+zadatak02/
+    index.html
+    style.css
+    script.js
+
+zadatak03/
+    index.html
+    style.css
+    script.js
 ```
 
-Vježbe su međusobno neovisne.
+Obavezni format naziva mapa:
+
+```text
+zadatak01
+zadatak02
+zadatak03
+...
+```
+
+Nemojte koristiti nazive poput:
+
+```text
+zad1
+zadatak-1
+prvi-zadatak
+novo
+final
+```
+
+Svaka vježba je neovisna cjelina, pa različiti branchevi mogu sadržavati mape i datoteke istih naziva.
 
 ---
 
 ## 5. Commit
 
-Nakon završetka vježbe napravite commit:
+Nakon završetka rada napravite commit:
 
 ```bash
 git add .
@@ -127,7 +151,7 @@ Ako naknadno radite ispravak ili doradu, koristite jasnu poruku, primjerice:
 
 ```text
 Vjezba 01 - ispravak
-Vjezba 03 - dorada
+Vjezba 03 - dorada zadatka 02
 ```
 
 Nemojte koristiti nejasne commit poruke poput:
@@ -167,13 +191,21 @@ Nakon pusha provjerite na GitHubu da se branch pojavio u vašem repozitoriju.
 Za svaku novu vježbu vratite se na `main`:
 
 ```bash
-git switch main
+git checkout main
 ```
 
 Zatim napravite novi branch:
 
 ```bash
-git switch -c vjezba02
+git checkout -b vjezba02
+```
+
+Unutar tog brancha napravite mape za zadatke:
+
+```text
+zadatak01/
+zadatak02/
+zadatak03/
 ```
 
 Nakon završetka vježbe:
@@ -201,10 +233,13 @@ Rješenja vježbi ne pushajte direktno na `main`.
 Za svaku novu vježbu postupak je:
 
 ```bash
-git switch main
-git switch -c vjezbaXX
+git checkout main
+git checkout -b vjezbaXX
 
-# izrada vježbe
+# izrada zadataka u mapama:
+# zadatak01/
+# zadatak02/
+# zadatak03/
 
 git add .
 git commit -m "Vjezba XX"
@@ -214,8 +249,8 @@ git push -u origin vjezbaXX
 Primjer za vježbu 5:
 
 ```bash
-git switch main
-git switch -c vjezba05
+git checkout main
+git checkout -b vjezba05
 
 git add .
 git commit -m "Vjezba 05"
@@ -230,4 +265,22 @@ Student je odgovoran provjeriti da se njegova vježba nalazi na GitHubu.
 
 Vježba koja postoji samo lokalno na računalu, a nije pushana na GitHub, ne smatra se predanom.
 
-Naziv brancha mora biti točno prema zadanom formatu (`vjezba01`, `vjezba02`, ...), jer će se predaje po tim nazivima kasnije moći automatski provjeravati.
+Naziv brancha mora biti točno prema zadanom formatu:
+
+```text
+vjezba01
+vjezba02
+vjezba03
+...
+```
+
+Nazivi mapa zadataka moraju biti točno prema zadanom formatu:
+
+```text
+zadatak01
+zadatak02
+zadatak03
+...
+```
+
+Ovakvo imenovanje omogućuje jednostavan pregled i kasniju automatsku provjeru predanih vježbi.
