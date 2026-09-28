@@ -13,12 +13,20 @@ Svaki student treba:
 5. Unutar svake vježbe napraviti zasebnu mapu za svaki zadatak.
 6. Nakon završetka rada napraviti commit.
 7. Pushati branch na svoj GitHub repozitorij.
+8. Jednom, na početku kolegija, predavaču dostaviti svoje podatke za evidenciju:
+   - ime i prezime
+   - JMBAG
+   - GitHub username
 
 ---
 
 ## 1. Fork repozitorija
 
-Na GitHubu otvorite ovaj repozitorij i kliknite **Fork**.
+Otvorite repozitorij:
+
+`https://github.com/Algebra-AA/AA-2026`
+
+Na GitHubu kliknite **Fork**.
 
 Nakon toga ćete na svom GitHub računu imati vlastitu kopiju repozitorija:
 
@@ -26,9 +34,40 @@ Nakon toga ćete na svom GitHub računu imati vlastitu kopiju repozitorija:
 
 ---
 
-## 2. Kloniranje repozitorija
+## 2. Podaci za evidenciju
 
-Klonirajte svoj fork:
+Nakon što ste napravili fork, predavaču dostavite sljedeće podatke:
+
+```text
+Ime i prezime:
+JMBAG:
+GitHub username:
+```
+
+Primjer:
+
+```text
+Ivan Horvat
+0246098765
+ivanhorvat
+```
+
+GitHub username dostavlja se samo jednom.
+
+Na temelju GitHub usernamea predavač će moći pratiti postoje li u vašem repozitoriju branchevi za pojedine vježbe, primjerice:
+
+```text
+vjezba01
+vjezba02
+vjezba03
+...
+```
+
+---
+
+## 3. Kloniranje repozitorija
+
+Klonirajte **svoj fork**, a ne originalni repozitorij kolegija.
 
 ```bash
 git clone https://github.com/VAS-USERNAME/AA-2026.git
@@ -48,7 +87,7 @@ code .
 
 ---
 
-## 3. Nazivi brancheva
+## 4. Nazivi brancheva
 
 Svaka vježba mora biti izrađena u zasebnom branchu.
 
@@ -81,7 +120,7 @@ Nemojte izrađivati `vjezba02` iz `vjezba01`, `vjezba03` iz `vjezba02` itd.
 
 ---
 
-## 4. Struktura zadataka unutar vježbe
+## 5. Struktura zadataka unutar vježbe
 
 Jedna vježba može sadržavati više zadataka.
 
@@ -129,9 +168,9 @@ Svaka vježba je neovisna cjelina, pa različiti branchevi mogu sadržavati mape
 
 ---
 
-## 5. Commit
+## 6. Commit
 
-Nakon završetka rada napravite commit:
+Nakon završetka vježbe napravite commit:
 
 ```bash
 git add .
@@ -168,7 +207,7 @@ promjene
 
 ---
 
-## 6. Push na GitHub
+## 7. Push na GitHub
 
 Kod prvog pusha određenog brancha koristite:
 
@@ -184,9 +223,11 @@ git push
 
 Nakon pusha provjerite na GitHubu da se branch pojavio u vašem repozitoriju.
 
+Vježba koja postoji samo lokalno na računalu, a nije pushana na GitHub, ne smatra se predanom.
+
 ---
 
-## 7. Sljedeća vježba
+## 8. Sljedeća vježba
 
 Za svaku novu vježbu vratite se na `main`:
 
@@ -218,7 +259,7 @@ git push -u origin vjezba02
 
 ---
 
-## 8. Main branch
+## 9. Main branch
 
 `main` branch ne koristi se za izradu vježbi.
 
@@ -228,7 +269,7 @@ Rješenja vježbi ne pushajte direktno na `main`.
 
 ---
 
-## 9. Sažetak postupka
+## 10. Sažetak postupka
 
 Za svaku novu vježbu postupak je:
 
@@ -262,8 +303,6 @@ git push -u origin vjezba05
 ## Važno
 
 Student je odgovoran provjeriti da se njegova vježba nalazi na GitHubu.
-
-Vježba koja postoji samo lokalno na računalu, a nije pushana na GitHub, ne smatra se predanom.
 
 Naziv brancha mora biti točno prema zadanom formatu:
 
