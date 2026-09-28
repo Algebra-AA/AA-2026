@@ -6,61 +6,69 @@ Repozitorij za predaju vježbi iz kolegija AA.
 
 Svaki student treba:
 
-1. Forkati ovaj repozitorij na svoj GitHub račun.
-2. Klonirati svoj fork na računalo.
-3. Otvoriti repozitorij u Visual Studio Codeu.
-4. Za svaku vježbu napraviti zaseban branch.
-5. Unutar svake vježbe napraviti zasebnu mapu za svaki zadatak.
-6. Nakon završetka rada napraviti commit.
-7. Pushati branch na svoj GitHub repozitorij.
-8. Jednom, na početku kolegija, predavaču dostaviti svoje podatke za evidenciju:
-   - ime i prezime
-   - JMBAG
-   - GitHub username
+1. Na svom GitHub računu napraviti vlastiti javni repozitorij naziva `AA-2026`.
+2. Prilikom izrade repozitorija uključiti opciju **Add a README file**.
+3. Klonirati svoj repozitorij na računalo.
+4. Otvoriti repozitorij u Visual Studio Codeu.
+5. Za svaku vježbu napraviti zaseban branch.
+6. Unutar svake vježbe napraviti zasebnu mapu za svaki zadatak.
+7. Nakon završetka rada napraviti commit.
+8. Pushati branch na svoj GitHub repozitorij.
+9. Jednom, na početku kolegija, putem Google obrasca dostaviti ime i prezime te link na svoj GitHub repozitorij.
 
 ---
 
-## 1. Fork repozitorija
+## 1. Izrada GitHub repozitorija
 
-Otvorite repozitorij:
+Na svom GitHub računu napravite novi repozitorij.
 
-`https://github.com/Algebra-AA/AA-2026`
+Postavke repozitorija:
 
-Na GitHubu kliknite **Fork**.
+```text
+Repository name: AA-2026
+Visibility: Public
+```
 
-Nakon toga ćete na svom GitHub računu imati vlastitu kopiju repozitorija:
+Prilikom izrade repozitorija uključite opciju:
 
-`vas-username/AA-2026`
+```text
+Add a README file
+```
+
+Nakon toga ćete na svom GitHub računu imati repozitorij oblika:
+
+```text
+https://github.com/VAS-USERNAME/AA-2026
+```
 
 ---
 
 ## 2. Podaci za evidenciju
 
-Nakon što ste napravili fork, predavaču putem google obrasca dostavite sljedeće podatke:
+Nakon što ste napravili svoj repozitorij, putem Google obrasca dostavite:
+
+- ime i prezime
+- link na svoj GitHub repozitorij
+
+Obrazac:
 
 [AA-2026 – GitHub podaci studenata](https://forms.gle/feG2GaQ3cqPhYfUu7)
 
-U obrazac je potrebno upisati:
+Primjer ispravnog linka:
 
-- ime i prezime
-- GitHub username
+```text
+https://github.com/korisnicko-ime/AA-2026
+```
 
 Obrazac je potrebno ispuniti samo jednom.
 
-Na temelju GitHub usernamea predavač će moći pratiti postoje li u vašem repozitoriju branchevi za pojedine vježbe, primjerice:
-
-```text
-vjezba01
-vjezba02
-vjezba03
-...
-```
+Link na repozitorij koristi se za evidenciju i pregled predanih vježbi.
 
 ---
 
 ## 3. Kloniranje repozitorija
 
-Klonirajte **svoj fork**, a ne originalni repozitorij kolegija.
+Kopirajte HTTPS adresu svog repozitorija i klonirajte ga na računalo:
 
 ```bash
 git clone https://github.com/VAS-USERNAME/AA-2026.git
@@ -296,6 +304,8 @@ git push -u origin vjezba05
 ## Važno
 
 Student je odgovoran provjeriti da se njegova vježba nalazi na GitHubu.
+
+Vježba se smatra predanom kada odgovarajući branch postoji na GitHub repozitoriju studenta.
 
 Naziv brancha mora biti točno prema zadanom formatu:
 
